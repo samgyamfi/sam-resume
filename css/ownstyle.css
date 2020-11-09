@@ -1,0 +1,13 @@
+.profile-img{
+    object-fit: cover;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    max-height: 10rem;
+    min-width: 150px;
+    /* max-width: 100px; */
+}
+
+.project__image{
+    height : 300px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
