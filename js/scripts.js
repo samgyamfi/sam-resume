@@ -3,6 +3,20 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
     */
+
+
+    //Register Service Worker File
+    if("serviceWorker" in navigator){
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('../service-worker.js')
+            .then(reg => console.log('Service Worker: Registered'))
+            .catch(err => console.log(`Service Worker : Error : ${err}`));
+        })
+    }
+
+
+
+
     (function ($) {
     "use strict"; // Start of use strict
 
